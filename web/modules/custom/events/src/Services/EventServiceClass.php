@@ -34,6 +34,7 @@ class EventServiceClass {
             'Fusce nibh erat, aliquam non metus quis, mattis elementum nibh. Nullam volutpat ante non tortor laoreet blandit.',
             'Suspendisse et nunc id ligula interdum malesuada.',
         ];
+        return $time;
     }
 
 //    /**
@@ -49,7 +50,7 @@ class EventServiceClass {
     }
 
     function events_preprocess_html(&$variables) {
-        $random_message = \Drupal::service('eventsservice')->getRandomMessage();
+        $random_message = \Drupal::service('events.performance_tasks')->dateTime();
         drupal_set_message("$random_message");
     }
 }
