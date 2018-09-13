@@ -1,0 +1,20 @@
+{# Footer #}
+  <footer class="py-5 bg-dark">
+    <div class="footer">
+      <div class="col-md-6 float-left border-footer">
+        {% if page.footer_first %}
+          <span class="text-left">
+            {{ page.footer_first }}
+          </span>
+        {% endif %}
+      </div>
+        <div class="col-md-6 float-right border-footer">
+          {% if page.footer_second %}
+            <span class="text-right">
+              {{ page.footer_second }}
+            </span>
+          {% endif %}
+        </div>
+      </div>
+    </footer>
+{# End Footer #}

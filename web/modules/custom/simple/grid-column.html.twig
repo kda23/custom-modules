@@ -1,0 +1,14 @@
+<button type="button" onclick="myFunction()">Set text color</button>
+
+{% if content.top %}
+    <div id="myH2" class="top">{{ content.top }}</div>
+{% endif %}
+{% if content.left %}
+    <div id="myP" class="left">{{ content.left }}</div>
+{% endif %}
+{% if content.right %}
+    <div id="myP2" class="right">{{ content.right }}</div>
+{% endif %}
+{% if content.bottom %}
+    <div id="myDiv" class="bottom">{{ content.bottom }}</div>
+{% endif %}

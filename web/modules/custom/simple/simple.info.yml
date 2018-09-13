@@ -1,0 +1,5 @@
+name: simple
+description: Create a page with rendering time
+packege: Custom
+type: module
+core: 8.x

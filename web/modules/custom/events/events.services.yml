@@ -1,0 +1,4 @@
+services:
+  events.performance_tasks:
+    class: Drupal\events\Services\EventServiceClass
+    arguments: []

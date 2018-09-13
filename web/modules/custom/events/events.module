@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * @file
+ * Contains events.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\events\Services\EventServiceClass;
+use Symfony\Component\HttpFoundation\Response;
+
+/**
+ * Implements hook_help().
+ */
+//function events_help($route_name, RouteMatchInterface $route_match) {
+//  switch ($route_name) {
+//    // Main module help for the events module.
+//    case 'help.page.events':
+//      $output = '';
+//      $output .= '<h3>' . t('About') . '</h3>';
+//      $output .= '<p>' . t('Events and other') . '</p>';
+//      return $output;
+//
+//    default:
+//  }
+//}
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function events_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+    $suggestions[] = 'article_' . 'list';
+}
+
+
+
+function events_theme($existing, $type, $theme, $path) {
+    return [
+        'article_list' => [
+            'variables' => [
+                'items' => [],
+                'title' => '',
+                'path' => drupal_get_path('module', 'events') . '/templates',
+                'tags' => '',
+                'context' => [],
+                'max-age' => '',
+            ]
+        ],
+    ];
+
+
+}
+

@@ -1,0 +1,10 @@
+div {
+    color: red; /* Цвет символа */
+    font-size: 100%; /* Размер шрифта */
+   } 
+p {
+ 	color:red;
+ }
+ body.page-node-type-article {
+ 	background-color: blue;
+ }

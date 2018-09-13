@@ -1,0 +1,5 @@
+name: 'events'
+type: module
+description: 'Events and other'
+core: 8.x
+package: 'Custom'

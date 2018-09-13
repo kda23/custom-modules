@@ -1,0 +1,28 @@
+bootstrap:
+  css:
+    theme:
+      css/front.css: {}
+      slick/slick.css: {}
+      slick/slick-theme.css: {}
+      css/custom.css: {}
+  js:
+    js/custom.js: {}
+    slick/slick.min.js: {}
+  dependencies:
+  - core/jquery
+  - core/jquery.once
+custom:
+  js:
+    js/settings.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+#slick:
+#  css:
+#    theme:
+#     css/slick.css: {}
+#     css/slick-theme.css: {}
+#     css/custom.css: {}
+#  js:
+#     js/slick.min.js: {}
+#     js/custom.js: {}

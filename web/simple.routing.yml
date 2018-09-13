@@ -1,0 +1,7 @@
+simple_says:
+  path: /the/dino/says
+  defaults:
+    _controller: \Drupal\simple\Controller\SimpleController::faq
+    _title: 'FAQ'
+  requirements:
+    _permission: 'access content'

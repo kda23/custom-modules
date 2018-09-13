@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<{{ ds_content_wrapper }}{{ attributes.addClass('ds-1col', 'clearfix', '1-col-div') }}>
+	<button id="attach">Attach</button>
+	<button id="detach">detach paragraphs</button>
+  {{ title_suffix.contextual_links }}
+  {{ ds_content }}
+
+</{{ ds_content_wrapper }}>

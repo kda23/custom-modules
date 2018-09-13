@@ -1,0 +1,7 @@
+hooks_says:
+  path: /my-route-module
+  defaults:
+    _controller: \Drupal\hooks\Controller\HooksController::faq
+    _title: 'FAQ'
+  requirements:
+    _permission: 'access content'

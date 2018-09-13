@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div>
+          {% if page.site_logo %}
+            <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+            <img src="{{ site_logo }}" alt="{{ 'Home'|t }}"/>
+            </a>             
+          {% endif %}
+          {{ page.header_first }}
+        </div>
+        {% if page.primary_menu %}
+        <div class="collapse navbar-collapse">
+          <nav class="navbar-nav ml-auto primary_menu">
+             {{ page.primary_menu }}
+          </nav>
+        </div>
+        {% endif %}
+      </div>
+</nav>

@@ -1,0 +1,27 @@
+global:
+  version: VERSION
+  css: 
+    theme:
+      css/bootstrap.css: {}
+      css/bootstrap.min.css: {}
+      css/bootstrap-grid.css: {}
+      css/bootstrap-reboot.css: {}
+      css/bootstrap-reboot.min.css: {}
+      css/style.css: {}
+      css/bootstrap.css.map: {}
+      css/bootstrap.min.css.map: {}
+      css/bootstrap-grid.css.map: {}
+      css/bootstrap-grid.min.css.map: {}
+      css/bootstrap-reboot.css.map: {}
+      css/bootstrap-reboot.min.css.map: {}
+      custom-style/css/front.css: {}
+  js:
+      js/bootstrap.bundle.js: {}
+      js/bootstrap.bundle.min.js: {}
+      js/bootstrap.js: {}
+      js/bootstrap.min.js: {}
+      custom-style/js/custom.js: {}
+      custom-style/js/customlibraries.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

@@ -1,0 +1,8 @@
+
+events.events_controller_hello:
+  path: '/events'
+  defaults:
+    _controller: '\Drupal\events\Controller\EventsController::hello'
+    _title: 'Main controller'
+  requirements:
+    _permission: 'access content'

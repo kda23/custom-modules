@@ -1,0 +1,7 @@
+simple_says:
+  path: /my-route1
+  defaults:
+    _controller: \Drupal\simple\Controller\SimpleController::faq
+    _title: 'FAQ'
+  requirements:
+    _permission: 'access content'

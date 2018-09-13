@@ -1,0 +1,13 @@
+hooks_page:
+  label: 'Custom grid'
+  template: templates/hooks-page
+  category: My Layouts
+  regions:
+    top:
+      label: Top block
+    left:
+      label: Left
+    right:
+      label: Right
+    bottom:
+      label: Bottom

@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d62a0c49-507d-41c3-9ddd-d4726eff7507" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../config/sync/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../config/sync/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../config/sync/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../config/sync/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/adminimal_theme.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/adminimal_theme.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/adminimal_theme.libraries.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/adminimal_theme.libraries.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/adminimal_theme.theme" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/adminimal_theme.theme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_breadcrumbs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_breadcrumbs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_content.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_content.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_local_actions.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_local_actions.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_login.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_messages.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_page_title.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_page_title.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_primary_local_tasks.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_primary_local_tasks.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_secondary_local_tasks.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/config/install/block.block.adminimal_theme_secondary_local_tasks.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/config/optional/block.block.adminimal_theme_help.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/config/optional/block.block.adminimal_theme_help.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/css/adminimal.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/css/adminimal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/images/caret-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/images/caret-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/images/chevron-disc-down-hover.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/images/chevron-disc-down-hover.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/images/chevron-disc-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/images/chevron-disc-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/images/chevron-disc-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/images/chevron-disc-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../adminimal_theme/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../adminimal_theme/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/config.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.layout.omega_default.generated.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.layout.omega_default.generated.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.layout.omega_default.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.layout.omega_default.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.layout.omega_front.generated.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.layout.omega_front.generated.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.layout.omega_front.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.layout.omega_front.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.layout.omega_node.generated.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.layout.omega_node.generated.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.layout.omega_node.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.layout.omega_node.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.omega-layouts.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.omega-layouts.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.region_groups.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.region_groups.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.settings.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/config/install/omega.settings.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/config/schema/omega.schema.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/config/schema/omega.schema.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/images/gear.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/images/gear.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/images/toback.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/images/toback.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/images/tofront.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/images/tofront.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/js/min/omega.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/js/min/omega.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/js/min/omega_admin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/js/min/omega_admin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/js/omega.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/js/omega.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/js/omega_admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/js/omega_admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/omega-functions--admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/omega-functions--admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/omega-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/omega-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/omega.breakpoints.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/omega.breakpoints.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/omega.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/omega.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/omega.libraries.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/omega.libraries.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/omega.theme" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/omega.theme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/src/Export/OmegaExport.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/src/Export/OmegaExport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/src/Export/OmegaExportInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/src/Export/OmegaExportInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/src/Layout/savelayout/SaveLayout.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/src/Layout/savelayout/SaveLayout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/src/Theme/OmegaInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/src/Theme/OmegaInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/src/Theme/OmegaSettingsInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/src/Theme/OmegaSettingsInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/breadcrumbs.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/breadcrumbs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/forms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/html-elements.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/html-elements.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/main-menus.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/main-menus.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/messages.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/messages.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/pagers.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/pagers.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/site-branding.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/site-branding.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/taxonomy-terms.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/elements/taxonomy-terms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/layout/omega_default-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/layout/omega_default-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/layout/omega_front-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/layout/omega_front-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/layout/omega_node-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/layout/omega_node-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/omega_admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/omega_admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/print.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/css/print.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/_omega-default-style-vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/_omega-default-style-vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/_omega-style-vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/_omega-style-vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/_omega_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/_omega_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/_demo_block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/_demo_block.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/_demo_indicator.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/_demo_indicator.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/breadcrumbs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/html-elements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/html-elements.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/main-menus.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/main-menus.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/messages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/messages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/pagers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/pagers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/site-branding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/site-branding.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/tabs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/tabs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/taxonomy-terms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/elements/taxonomy-terms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/grids/_omegags.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/grids/_omegags.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/layout/omega_default-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/layout/omega_default-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/layout/omega_front-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/layout/omega_front-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/layout/omega_node-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/layout/omega_node-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/omega_admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/omega_admin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/print.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/style/scss/print.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/Gemfile.SAMPLE" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/Gemfile.SAMPLE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.libraries.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.libraries.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.theme" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.theme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.theme-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.theme-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.theme.blank" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/OMEGA_SUBTHEME.theme.blank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/_style-vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/_style-vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/config.rb.SAMPLE" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/subtheme-samples/config.rb.SAMPLE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/templates/block--system-branding-block.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/templates/block--system-branding-block.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/templates/block.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/templates/block.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/templates/html.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/templates/html.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/templates/omega-indicator.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/templates/omega-indicator.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/templates/page.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/templates/page.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/core-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/core-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/debug-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/debug-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/export-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/export-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/general-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/general-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/images/region-demo-mode.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/images/region-demo-mode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/images/screen-indicator.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/images/screen-indicator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/layout-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/layout-config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/layout-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/layout-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/omega-intro.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/omega-intro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/scss-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/scss-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/style-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/style-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/theme-settings--export-handlers.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega/theme-settings/theme-settings--export-handlers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega_tools/omega_tools.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega_tools/omega_tools.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/omega_tools/omega_tools.module" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/omega_tools/omega_tools.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.layout.primary.generated.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.layout.primary.generated.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.layout.primary.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.layout.primary.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.omega-layouts.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.omega-layouts.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.region_groups.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.region_groups.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.settings.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.settings.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config/schema/omega_simple_starterkit.schema.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/config/schema/omega_simple_starterkit.schema.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/js/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/js/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/js/omega_simple_starterkit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/js/omega_simple_starterkit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/omega_simple_starterkit.breakpoints.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/omega_simple_starterkit.breakpoints.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/omega_simple_starterkit.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/omega_simple_starterkit.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/omega_simple_starterkit.libraries.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/omega_simple_starterkit.libraries.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/omega_simple_starterkit.theme" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/omega_simple_starterkit.theme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/style/css/layout/primary-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/style/css/layout/primary-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/style/css/omega_simple_starterkit.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/style/css/omega_simple_starterkit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/style/scss/_omega-style-vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/style/scss/_omega-style-vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/style/scss/layout/primary-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/style/scss/layout/primary-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/templates/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_simple_starterkit/templates/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.layout.front.generated.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.layout.front.generated.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.layout.front.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.layout.front.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.layout.primary.generated.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.layout.primary.generated.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.layout.primary.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.layout.primary.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.omega-layouts.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.omega-layouts.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.region_groups.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.region_groups.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.settings.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.settings.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.styles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/install/omega_starterkit.styles.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/schema/omega_starterkit.schema.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/config/schema/omega_starterkit.schema.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/js/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/js/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/js/omega_starterkit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/js/omega_starterkit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/omega_starterkit.breakpoints.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/omega_starterkit.breakpoints.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/omega_starterkit.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/omega_starterkit.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/omega_starterkit.libraries.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/omega_starterkit.libraries.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/omega_starterkit.theme" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/omega_starterkit.theme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/style/css/layout/front-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/style/css/layout/front-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/style/css/layout/primary-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/style/css/layout/primary-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/style/css/omega_starterkit.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/style/css/omega_starterkit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/style/scss/_omega-style-vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/style/scss/_omega-style-vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/style/scss/layout/front-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/style/scss/layout/front-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/style/scss/layout/primary-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/style/scss/layout/primary-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/templates/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega (copy)/starterkits/omega_starterkit/templates/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/config.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/config/install/omega.layout.omega_default.generated.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/config/install/omega.layout.omega_default.generated.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/config/install/omega.layout.omega_default.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/config/install/omega.layout.omega_default.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/config/install/omega.layout.omega_front.generated.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/config/install/omega.layout.omega_front.generated.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/config/install/omega.layout.omega_front.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/config/install/omega.layout.omega_front.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/config/install/omega.layout.omega_node.generated.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/config/install/omega.layout.omega_node.generated.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/config/install/omega.layout.omega_node.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/config/install/omega.layout.omega_node.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/config/install/omega.omega-layouts.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/config/install/omega.omega-layouts.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/config/install/omega.region_groups.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/config/install/omega.region_groups.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/config/install/omega.settings.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/config/install/omega.settings.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/config/schema/omega.schema.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/config/schema/omega.schema.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/images/gear.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/images/gear.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/images/toback.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/images/toback.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/images/tofront.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/images/tofront.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/js/min/omega.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/js/min/omega.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/js/min/omega_admin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/js/min/omega_admin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/js/omega.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/js/omega.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/js/omega_admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/js/omega_admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/omega-functions--admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/omega-functions--admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/omega-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/omega-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/omega.breakpoints.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/omega.breakpoints.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/omega.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/omega.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/omega.libraries.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/omega.libraries.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/omega.theme" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/omega.theme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/src/Export/OmegaExport.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/src/Export/OmegaExport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/src/Export/OmegaExportInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/src/Export/OmegaExportInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/src/Layout/savelayout/SaveLayout.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/src/Layout/savelayout/SaveLayout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/src/Theme/OmegaInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/src/Theme/OmegaInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/src/Theme/OmegaSettingsInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/src/Theme/OmegaSettingsInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/elements/breadcrumbs.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/elements/breadcrumbs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/elements/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/elements/forms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/elements/html-elements.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/elements/html-elements.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/elements/main-menus.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/elements/main-menus.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/elements/messages.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/elements/messages.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/elements/pagers.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/elements/pagers.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/elements/site-branding.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/elements/site-branding.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/elements/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/elements/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/elements/taxonomy-terms.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/elements/taxonomy-terms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/layout/omega_default-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/layout/omega_default-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/layout/omega_front-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/layout/omega_front-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/layout/omega_node-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/layout/omega_node-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/omega_admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/omega_admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/css/print.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/css/print.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/_omega-default-style-vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/_omega-default-style-vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/_omega-style-vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/_omega-style-vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/_omega_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/_omega_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/_demo_block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/_demo_block.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/_demo_indicator.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/_demo_indicator.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/breadcrumbs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/html-elements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/html-elements.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/main-menus.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/main-menus.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/messages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/messages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/pagers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/pagers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/site-branding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/site-branding.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/tabs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/tabs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/taxonomy-terms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/elements/taxonomy-terms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/grids/_omegags.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/grids/_omegags.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/layout/omega_default-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/layout/omega_default-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/layout/omega_front-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/layout/omega_front-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/layout/omega_node-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/layout/omega_node-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/omega_admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/omega_admin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/style/scss/print.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/style/scss/print.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/Gemfile.SAMPLE" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/Gemfile.SAMPLE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.libraries.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.libraries.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.theme" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.theme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.theme-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.theme-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.theme.blank" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/OMEGA_SUBTHEME.theme.blank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/_style-vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/_style-vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/config.rb.SAMPLE" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/subtheme-samples/config.rb.SAMPLE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/templates/block--system-branding-block.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/templates/block--system-branding-block.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/templates/block.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/templates/block.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/templates/html.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/templates/html.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/templates/omega-indicator.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/templates/omega-indicator.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/templates/page.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/templates/page.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings/core-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings/core-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings/debug-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings/debug-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings/export-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings/export-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings/general-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings/general-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings/images/region-demo-mode.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings/images/region-demo-mode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings/images/screen-indicator.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings/images/screen-indicator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings/layout-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings/layout-config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings/layout-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings/layout-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings/omega-intro.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings/omega-intro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings/scss-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings/scss-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings/style-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings/style-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega/theme-settings/theme-settings--export-handlers.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega/theme-settings/theme-settings--export-handlers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega_tools/omega_tools.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega_tools/omega_tools.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/omega_tools/omega_tools.module" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/omega_tools/omega_tools.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.layout.primary.generated.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.layout.primary.generated.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.layout.primary.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.layout.primary.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.omega-layouts.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.omega-layouts.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.region_groups.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.region_groups.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.settings.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config/install/omega_simple_starterkit.settings.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config/schema/omega_simple_starterkit.schema.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/config/schema/omega_simple_starterkit.schema.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/js/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/js/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/js/omega_simple_starterkit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/js/omega_simple_starterkit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/omega_simple_starterkit.breakpoints.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/omega_simple_starterkit.breakpoints.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/omega_simple_starterkit.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/omega_simple_starterkit.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/omega_simple_starterkit.libraries.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/omega_simple_starterkit.libraries.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/omega_simple_starterkit.theme" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/omega_simple_starterkit.theme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/style/css/layout/primary-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/style/css/layout/primary-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/style/css/omega_simple_starterkit.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/style/css/omega_simple_starterkit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/style/scss/_omega-style-vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/style/scss/_omega-style-vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/style/scss/layout/primary-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/style/scss/layout/primary-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/templates/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_simple_starterkit/templates/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.layout.front.generated.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.layout.front.generated.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.layout.front.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.layout.front.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.layout.primary.generated.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.layout.primary.generated.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.layout.primary.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.layout.primary.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.omega-layouts.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.omega-layouts.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.region_groups.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.region_groups.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.settings.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.settings.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.styles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/install/omega_starterkit.styles.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/schema/omega_starterkit.schema.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/config/schema/omega_starterkit.schema.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/js/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/js/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/js/omega_starterkit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/js/omega_starterkit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/omega_starterkit.breakpoints.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/omega_starterkit.breakpoints.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/omega_starterkit.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/omega_starterkit.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/omega_starterkit.libraries.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/omega_starterkit.libraries.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/omega_starterkit.theme" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/omega_starterkit.theme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/style/css/layout/front-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/style/css/layout/front-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/style/css/layout/primary-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/style/css/layout/primary-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/style/css/omega_starterkit.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/style/css/omega_starterkit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/style/scss/_omega-style-vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/style/scss/_omega-style-vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/style/scss/layout/front-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/style/scss/layout/front-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/style/scss/layout/primary-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/style/scss/layout/primary-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/templates/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../omega/starterkits/omega_starterkit/templates/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/11-800x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/11-800x300.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/Destination-Photo-Tour-RCC-Website-DPI-72-14-800x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/Destination-Photo-Tour-RCC-Website-DPI-72-14-800x300.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/canada.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/canada.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/config/install/block.block.primaryadminactions.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/config/install/block.block.primaryadminactions.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/config/install/block.block.tabs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/config/install/block.block.tabs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/config/install/block.block.tools.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/config/install/block.block.tools.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/config/install/block.block.useraccountmenu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/config/install/block.block.useraccountmenu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/config/optional/block.block.footer.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/config/optional/block.block.footer.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/config/optional/block.block.showcase_lite_powered.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/config/optional/block.block.showcase_lite_powered.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/img-portfolio-800x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/img-portfolio-800x300.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../showcase_lite/showcase_lite.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../showcase_lite/showcase_lite.info.yml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2089183488">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1" />
+    <option name="width" value="1368" />
+    <option name="height" value="741" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d62a0c49-507d-41c3-9ddd-d4726eff7507" name="Default Changelist" comment="" />
+      <created>1535376933755</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535376933755</updated>
+      <workItem from="1535376947615" duration="427000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="427000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="0" width="1368" height="741" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+</project>

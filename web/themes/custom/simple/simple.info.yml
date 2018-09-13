@@ -1,0 +1,17 @@
+name: simple
+type: theme
+base theme: classy
+description: 'Simple theam for drupal.'
+core: 8.x
+libraries:
+   - simple/global
+regions:
+  header_first: 'Header first'
+  primary_menu: 'Header second'
+  breadcrumbs: 'Breadcrumbs'
+  content: 'Page content'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  footer_first: 'Footer First'
+  footer_second: 'Footer Second'
+  
