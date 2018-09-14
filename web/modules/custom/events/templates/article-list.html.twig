@@ -1,5 +1,9 @@
-<ul>
-{#{% for article in items %}#}
-    {#<li>{{ article.name }}</li>#}
-{#{% endfor %}#}
+<br>
+    {{ date }}<br>
+    {% for article in list %}
+        {{ article }}<br>
+    {% endfor %}
+    {{ time }}
+    <ul>
+
 </ul>

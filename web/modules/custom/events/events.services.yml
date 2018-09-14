@@ -2,3 +2,9 @@ services:
   events.performance_tasks:
     class: Drupal\events\Services\EventServiceClass
     arguments: []
+  events.latest_articles:
+    class: Drupal\events\Services\NodesListServices
+    arguments: []
+  events.jsonservices:
+    class: Drupal\events\JsonServices
+    arguments: []

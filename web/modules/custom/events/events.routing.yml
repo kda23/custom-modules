@@ -3,6 +3,24 @@ events.events_controller_hello:
   path: '/events'
   defaults:
     _controller: '\Drupal\events\Controller\EventsController::hello'
-    _title: 'Main controller'
+    _title_callback: '\Drupal\events\Controller\EventsController::titleTeamplate'
+  requirements:
+    _permission: 'access content'
+#    _role: 'authenticated'
+    _method: 'GET'
+
+events.current_nodes_controller_lastNode:
+  path: '/events/latest-nodes'
+  defaults:
+    _controller: '\Drupal\events\Controller\CurrentNodesController::latestNodes'
+    _title: 'List of nodes created today'
+  requirements:
+    _permission: 'access content'
+
+events.json_controller_jsonNode:
+  path: '/events/nodes-json'
+  defaults:
+    _controller: '\Drupal\events\Controller\JsonController::jsonNode'
+    _title: 'jsonNode'
   requirements:
     _permission: 'access content'

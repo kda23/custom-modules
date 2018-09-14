@@ -11,40 +11,46 @@ use Drupal\events\Services\EventServiceClass;
  * Class EventsController.
  */
 
-class EventsController extends ControllerBase {
+class EventsController extends ControllerBase
+{
 
     /**
      * @var Drupal\events\Services\EventServiceClass
      */
     private $generator;
-    private $build;
 
-    public function __construct(EventServiceClass $generator) {
+    public function __construct(EventServiceClass $generator)
+    {
         $this->generator = $generator;
     }
 
-  public function hello() {
+  public function hello()
+  {
       $date = $this->generator->getCurrentDate();
       $build = [
-              '#markup' => time(),
+              '#date' =>  $date,
               '#theme' => 'article_list',
-              'some' => 'string',
               '#cache' => [
-                  'tags' => \Drupal::entityTypeManager()->getStorage('user')->load(1)->getCacheTags(),
-                  'context' => ['user'],
-                  'max-age' => 10000,
-              ],
+                'context' => ['user'],
+                'max-age' => 150,
+                ],
       ];
-//    dump($build);
-    $this->build = $build;
-    return $this->build;
-//    return [
-//
-//      '#items' => $items,
-//    ];
+//      $build['#cache']['max-age'] = 300;
+////      $build['#markup'] = time();
+//      $response = Response::create($date);
+//      $response->headers->set('Cache-Control', 'max-age=150');
+      return $build;
   }
 
-  public static function create(ContainerInterface $container) {
+  public function titleTeamplate ()
+  {
+     $time = $this->generator->time();
+     $title = "My page. Generated at $time";
+     return $title;
+  }
+
+  public static function create(ContainerInterface $container)
+  {
     $services = $container->get('events.performance_tasks');
     return new static($services);
   }
