@@ -17,20 +17,17 @@ class JsonServices
    */
   public function generate()
   {
-      $date = date('H:i:s');
-    $array = [1 => 'drupal', 2 => 'joomla', 3 => 'wordpress', 4 => $date];
-    $json = \GuzzleHttp\json_encode($array);
+    $date = date('H:i:s');
+    $node = \Drupal\node\Entity\Node::loadMultiple();
+    foreach ($node as $nodes) {
+        $nodeArray[] = $nodes->title->value;
+        $nodeArray1[] = $nodes->type->value;
+        $nodeArray[] = $nodes->nid->value;
+    }
+    $json = \GuzzleHttp\json_encode($date);
     $response = Response::create($json);
-    $response->headers->set('Content-type', 'application/json');
-    $response->headers->set('Cache-Control', 'max-age=100000, public');
+//    $response->headers->set('Content-type', 'application/json');
+    $response->headers->set('Cache-Control', "max-age=300, public");
     return $response;
-
-
-
-
-
-
-
-      $comment = \Drupal::entityManager()->getStorage('comment');
   }
 }

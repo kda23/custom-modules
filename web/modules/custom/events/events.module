@@ -11,23 +11,30 @@ use Symfony\Component\HttpFoundation\Response;
 
 function events_theme($existing, $type, $theme, $path) {
     return [
-        'article_list' => [
-            'variables' => [
-                'date' => [],
-//                'path' => drupal_get_path('module', 'events') . '/templates',
-                'tags' => '',
-                'context' => [],
-                'theme' => '',
-                'cache' => [],
-                'list' => [],
-            ]
-        ],
-    ];
+            'article_list' => [
+                'variables' => [
+                    'date' => [],
+                    'tags' => '',
+                    'context' => [],
+                    'theme' => '',
+                    'cache' => [],
+                    'list' => [],
+                ],
+            ],
+            'search_nodes' => [
+                'variables' => [
+                    'result' => [],
+                ],
+            ],
+            'comments' => [
+                'variables' => [
+                    'comments' => [],
+                    'subject' => [],
+                    'body' => [],
+                    'created' => [],
+                 ]
+            ],
+        ];
 }
 
-//function events_preprocess_html() {
-//    $response = Response::create($json);
-//    $response->headers->set('Cache-Control', 'max-age=150');
-//    return $response;
-//}
 

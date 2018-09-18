@@ -5,7 +5,8 @@ namespace Drupal\events\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Response;
-use Drupal\events\Services\EventServiceClass;
+use Drupal\events\Services\EventService;
+use Drupal\mymodule\Breadcrumb\MymoduleBreadcrumbBuilder;
 
 /**
  * Class EventsController.
@@ -19,13 +20,14 @@ class EventsController extends ControllerBase
      */
     private $generator;
 
-    public function __construct(EventServiceClass $generator)
+    public function __construct(EventService $generator)
     {
         $this->generator = $generator;
     }
 
   public function hello()
   {
+
       $date = $this->generator->getCurrentDate();
       $build = [
               '#date' =>  $date,
@@ -35,10 +37,7 @@ class EventsController extends ControllerBase
                 'max-age' => 150,
                 ],
       ];
-//      $build['#cache']['max-age'] = 300;
-////      $build['#markup'] = time();
-//      $response = Response::create($date);
-//      $response->headers->set('Cache-Control', 'max-age=150');
+//      return $response->headers->set('Cache-Control', 'max-age=150');
       return $build;
   }
 
@@ -51,7 +50,7 @@ class EventsController extends ControllerBase
 
   public static function create(ContainerInterface $container)
   {
-    $services = $container->get('events.performance_tasks');
-    return new static($services);
+      $generator = $container->get('events.performance_tasks');
+    return new static($generator);
   }
 }

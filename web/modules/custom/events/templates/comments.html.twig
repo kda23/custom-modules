@@ -1,0 +1,11 @@
+<div class="infoBar">
+  {% for comment in comments %}
+    <hr>
+    {{ comment.uid }}<br>
+    {{ comment.subject }}<br>
+    {{ comment.body }}<br>
+    {{ comment.created }}<br>
+    <br>
+    <hr>
+  {% endfor %}
+</div>

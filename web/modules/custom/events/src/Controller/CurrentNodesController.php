@@ -11,19 +11,16 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  */
 class CurrentNodesController extends ControllerBase
 {
-    // Services connected to controllerr
+    /**
+     * @var Drupal\events\Services\NodesListServices
+     */
     private $generator;
 
     public function __construct(NodesListServices $generator)
     {
         $this->generator = $generator;
     }
-  /**
-   * Lastnode.
-   *
-   * @return string
-   *   Return Hello string.
-   */
+
     public function latestNodes()
     {
         $node = $this->generator->latestNodes();
@@ -32,11 +29,5 @@ class CurrentNodesController extends ControllerBase
             '#list' => $node,
             '#theme' => 'article_list',
         ];
-    }
-
-    public static function create(ContainerInterface $container)
-    {
-        $services = $container->get('events.latest_articles');
-        return new static($services);
     }
 }

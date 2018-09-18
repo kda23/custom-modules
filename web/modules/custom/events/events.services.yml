@@ -1,10 +1,20 @@
 services:
   events.performance_tasks:
-    class: Drupal\events\Services\EventServiceClass
-    arguments: []
+    class: Drupal\events\Services\EventService
+    arguments: ['@date.formatter']
   events.latest_articles:
     class: Drupal\events\Services\NodesListServices
     arguments: []
   events.jsonservices:
     class: Drupal\events\JsonServices
     arguments: []
+  events.search_nodes:
+    class: Drupal\events\Services\SearchNode
+    arguments: ['@entity_type.manager']
+  events.weekend:
+    class: Drupal\events\Services\WeekendDay
+    arguments: ['@language_manager']
+  events.breadcrumb:
+    class: Drupal\events\Services\EventsBreadcrumbBuilder
+    tags:
+    - { name: breadcrumb_builder, priority: 100 }

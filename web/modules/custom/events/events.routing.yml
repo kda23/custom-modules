@@ -6,8 +6,8 @@ events.events_controller_hello:
     _title_callback: '\Drupal\events\Controller\EventsController::titleTeamplate'
   requirements:
     _permission: 'access content'
-#    _role: 'authenticated'
-    _method: 'GET'
+    _role: 'authenticated'
+  methods: [GET]
 
 events.current_nodes_controller_lastNode:
   path: '/events/latest-nodes'
@@ -22,5 +22,37 @@ events.json_controller_jsonNode:
   defaults:
     _controller: '\Drupal\events\Controller\JsonController::jsonNode'
     _title: 'jsonNode'
+  requirements:
+    _permission: 'access content'
+
+route_user_comments:
+  path: '/node/{id}/user-comments'
+  defaults:
+    _controller: '\Drupal\events\Controller\CommentsController::commentsList'
+    _title: 'List of comments'
+  requirements:
+    _permission: 'access content'
+
+search_nodes_by_title:
+  path: '/node/search'
+  defaults:
+    _controller: '\Drupal\events\Controller\SearchNodeController::searchNodes'
+    _title: 'Search results'
+  requirements:
+    _permission: 'access content'
+
+route_weekend_day:
+  path: '/weekend'
+  defaults:
+    _controller: '\Drupal\events\Controller\WeekendDayController::DayOff'
+    _title: 'Weekend'
+  requirements:
+    _permission: 'access content'
+
+route_breadcrumb:
+  path: '/breadcrumb'
+  defaults:
+    _controller: '\Drupal\events\Controller\EventsBreadcrumbBuilderController::DayOff'
+    _title: 'Weekend'
   requirements:
     _permission: 'access content'
