@@ -25,9 +25,13 @@ class CurrentNodesController extends ControllerBase
     {
         $node = $this->generator->latestNodes();
         return [
-            '#type' => 'markup',
             '#list' => $node,
             '#theme' => 'article_list',
         ];
+    }
+    public static function create(ContainerInterface $container)
+    {
+        $generator = $container->get('events.latest_articles');
+        return new static($generator);
     }
 }

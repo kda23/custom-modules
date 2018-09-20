@@ -9,14 +9,6 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class NodesListServices
 {
-    private $article;
-
-    public function __construct()
-    {
-        // Push functions to controller.
-        $this->latestNodes();
-    }
-
     function latestNodes()
     {
         $startNode  =  strtotime("today", REQUEST_TIME);

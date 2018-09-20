@@ -29,16 +29,20 @@ class EventsController extends ControllerBase
   {
 
       $date = $this->generator->getCurrentDate();
-      $build = [
+      $renderable = [
               '#date' =>  $date,
               '#theme' => 'article_list',
               '#cache' => [
                 'context' => ['user'],
                 'max-age' => 150,
                 ],
+              '#test_var' => 'test variable',
       ];
-//      return $response->headers->set('Cache-Control', 'max-age=150');
-      return $build;
+//      $response->headers->set('Cache-Control', 'max-age=150');
+      $rendered = \Drupal::service('renderer')->render($renderable);
+      return [
+          '#markup' => $rendered,
+      ];
   }
 
   public function titleTeamplate ()
@@ -50,7 +54,7 @@ class EventsController extends ControllerBase
 
   public static function create(ContainerInterface $container)
   {
-      $generator = $container->get('events.performance_tasks');
+    $generator = $container->get('events.performance_tasks');
     return new static($generator);
   }
 }

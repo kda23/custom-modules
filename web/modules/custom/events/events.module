@@ -37,4 +37,16 @@ function events_theme($existing, $type, $theme, $path) {
         ];
 }
 
+function events_preprocess_breadcrumb(&$variables) {
+    $request = \Drupal::request();
+    if ($route = $request->attributes->get(\Symfony\Cmf\Component\Routing\RouteObjectInterface::ROUTE_OBJECT)) {
+        $title = \Drupal::service('title_resolver')->getTitle($request, $route);
+    }
+    if ($variables['breadcrumb']) {
+        $variables['breadcrumb'][] = [
+            'text' => $title
+        ];
+        $variables['#cache']['contexts'][] = 'url.path';
+    }
+}
 

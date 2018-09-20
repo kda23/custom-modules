@@ -7,7 +7,6 @@ events.events_controller_hello:
   requirements:
     _permission: 'access content'
     _role: 'authenticated'
-  methods: [GET]
 
 events.current_nodes_controller_lastNode:
   path: '/events/latest-nodes'
@@ -16,6 +15,7 @@ events.current_nodes_controller_lastNode:
     _title: 'List of nodes created today'
   requirements:
     _permission: 'access content'
+  methods: [GET]
 
 events.json_controller_jsonNode:
   path: '/events/nodes-json'
@@ -49,10 +49,19 @@ route_weekend_day:
   requirements:
     _permission: 'access content'
 
-route_breadcrumb:
-  path: '/breadcrumb'
+collect_phone.form:
+  path: '/collect-phone'
   defaults:
-    _controller: '\Drupal\events\Controller\EventsBreadcrumbBuilderController::DayOff'
-    _title: 'Weekend'
+    _title: 'Collect Phone - Form API example.'
+    # Get form by namespace
+    _form: '\Drupal\events\Form\CollectPhone'
   requirements:
     _permission: 'access content'
+
+#route_breadcrumb:
+#  path: '/breadcrumb'
+#  defaults:
+#    _controller: '\Drupal\events\Controller\EventsBreadcrumbBuilderController::DayOff'
+#    _title: 'Weekend'
+#  requirements:
+#    _permission: 'access content'

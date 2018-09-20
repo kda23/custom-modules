@@ -11,10 +11,12 @@ services:
   events.search_nodes:
     class: Drupal\events\Services\SearchNode
     arguments: ['@entity_type.manager']
+#    tags:
+#    - { name: event_subscriber }
   events.weekend:
     class: Drupal\events\Services\WeekendDay
     arguments: ['@language_manager']
-  events.breadcrumb:
-    class: Drupal\events\Services\EventsBreadcrumbBuilder
-    tags:
-    - { name: breadcrumb_builder, priority: 100 }
+#  events.breadcrumb:
+#    class: Drupal\events\Services\EventsBreadcrumbBuilder
+#    tags:
+#    - { name: breadcrumb_builder, priority: 100 }

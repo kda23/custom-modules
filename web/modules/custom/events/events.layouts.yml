@@ -1,0 +1,4 @@
+hooks_page:
+  label: 'Custom grid'
+  template: templates/breadcrumb
+  category: My Layouts

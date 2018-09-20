@@ -17,17 +17,15 @@ class JsonServices
    */
   public function generate()
   {
-    $date = date('H:i:s');
     $node = \Drupal\node\Entity\Node::loadMultiple();
     foreach ($node as $nodes) {
-        $nodeArray[] = $nodes->title->value;
-        $nodeArray1[] = $nodes->type->value;
         $nodeArray[] = $nodes->nid->value;
+        $nodeArray[] = $nodes->title->value;
+        $nodeArray[] = $nodes->type->target_id;
     }
-    $json = \GuzzleHttp\json_encode($date);
+    $json = \GuzzleHttp\json_encode($nodeArray);
     $response = Response::create($json);
-//    $response->headers->set('Content-type', 'application/json');
-    $response->headers->set('Cache-Control', "max-age=300, public");
+    $response->headers->set('Content-type', 'application/json');
     return $response;
   }
 }

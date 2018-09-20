@@ -3,9 +3,14 @@
 namespace Drupal\events\Services;
 
 use Drupal\Core\Entity\EntityTypeManager;
+use Drupal\search\Plugin\SearchIndexingInterface;
 use Drupal\search\SearchPluginManager;
+use Drupal\search\SearchQuery;
 use Symfony\Component\HttpFoundation\Response;
 use \Drupal\Core\Entity\Query\QueryInterface;
+use \Drupal\search\Controller\SearchController;
+use \Drupal\search\SearchPageInterface;
+use Drupal\node\Plugin\Search\NodeSearch;
 
 /**
  * Class NodesListServices.
@@ -20,28 +25,56 @@ class SearchNode
         $this->etm = $entityTypeManager;
     }
 
-    public function find($text, $entity_type = ‘node’) {
+    public function find($text, $entity_type = 'node')
+    {
         $words = explode(' ', $text);
-        $query = \Drupal::entityQuery('node')->condition('title', $text, 'CONTAINS');
-        dump($query);
+        // Get node id for every word from $text variable
+        foreach ($words as $word) {
+            $nid[] = \Drupal::entityQuery('node')->condition('title', $word, 'CONTAINS')->execute();
+        }
         $result = [];
         $x = 0;
-        foreach ($words as $word) {
-//            $result[] = $query = \Drupal::service('entity.query')
-//                ->get('node')->condition('title', $text);
-            $result[] = $this->etm->getStorage('node')->loadByProperties(['title' => $text]);
-            $nodeTitle[] = $result[$x][1]->getTitle();
-            $x++;
+        // Serch by every word from $text variable
+        foreach ($nid as $nids) {
+            foreach ($nids as $nidsNode) {
+                $result[] = $this->etm->getStorage('node')->load($nidsNode)->getTitle();
+            }
         }
-        return $nodeTitle;
+        return $result;
     }
 
-    public static function create(ContainerInterface $container)
-    {
-        $generator = $container->get('entity.query');
-        dump($generator);
-        return new static($generator);
+    public function smartSearch($text = 'Article 1') {
+        $query = \Drupal\search_api\Entity\Index::load('default_index')->query();
+        $query->addCondition('search_api_language', 'en');
+        $query->keys('Article');
+        $query->range(0, 25);
+        $data = $query->execute();
+        $results = $data->getResultItems();
+        $entities = [];
+        foreach($results as $result) {
+            $entities[] = $result->getOriginalObject()->get('nid')->value;
+        }
+        $entityId = reset($entities);
+        $entity = $this->etm->getStorage('node')->load($entityId);
+        $title[] = $entity->title->value;
+
+        return $title;
     }
+//    public function view(Request $request, SearchPageInterface $entity) {
+//        $build = parent::view($request, $entity);
+//        // Unset the Result title.
+//        if (isset($build['search_results_title'])) {
+//            unset($build['search_results_title']);
+//        }
+//        return $build;
+//    }
+
+//    public static function create(ContainerInterface $container)
+//    {
+//        $generator = $container->get('entity.query');
+//        return new static($generator);
+//    }
+
 //    public function find($text = 'Article', $entity_type = ‘node’)
 //    {
 //        $search = (explode( ' ', $text));

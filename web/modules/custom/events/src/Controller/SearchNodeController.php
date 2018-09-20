@@ -6,6 +6,7 @@ use Drupal\Core\Controller\ControllerBase;
 use Drupal\events\Services\SearchNode;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\RouteCollection;
 
 /**
  * Class EventsController.
@@ -18,7 +19,7 @@ class SearchNodeController extends ControllerBase
      */
     private $generator;
 
-    public function __construct(SearchNode $generator)
+    public function __construct($generator)
     {
         $this->generator = $generator;
     }
@@ -26,7 +27,10 @@ class SearchNodeController extends ControllerBase
     public function searchNodes()
     {
         $text = 'Article 1';
-        $searchResult = $this->generator->find($text);
+//        $searchResult = $this->generator->find($text, 'node');
+        $searchResult = $this->generator->smartSearch();
+
+//        $searchResult = $this->generator->smartSearch($text);
         $build = [
             '#result' =>  $searchResult,
             '#theme' => 'search_nodes',
