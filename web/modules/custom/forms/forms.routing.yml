@@ -1,0 +1,17 @@
+
+forms.user_form_controller_hello:
+  path: '/forms/hello'
+  defaults:
+    _controller: '\Drupal\forms\Controller\UserFormController::hello'
+    _title: 'title'
+  requirements:
+    _permission: 'access content'
+
+collect_phone.form:
+  path: '/collect-phone'
+  defaults:
+    _title: 'Collect Phone - Form API example.'
+    # Get form by namespace
+    _form: '\Drupal\forms\Form\CollectPhone'
+  requirements:
+    _permission: 'access content'

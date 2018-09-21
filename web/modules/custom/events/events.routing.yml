@@ -54,7 +54,7 @@ collect_phone.form:
   defaults:
     _title: 'Collect Phone - Form API example.'
     # Get form by namespace
-    _form: '\Drupal\events\Form\CollectPhone'
+    _form: '\Drupal\forms\Form\CollectPhone'
   requirements:
     _permission: 'access content'
 

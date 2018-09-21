@@ -7,7 +7,7 @@
  */
 
 // Объявляем пространство имён формы. Drupal\НАЗВАНИЕ_МОДУЛЯ\Form
-namespace Drupal\events\Form;
+namespace Drupal\forms\Form;
 
 // Указываем что нам потребуется FormBase, от которого мы будем наследоваться
 // а также FormStateInterface который позволит работать с данными.
@@ -31,7 +31,7 @@ class CollectPhone extends FormBase {
      * {@inheritdoc}.
      */
     public function getFormId() {
-        return 'Profession form';
+        return 'profession';
     }
 
     /**
@@ -45,24 +45,39 @@ class CollectPhone extends FormBase {
             '#title' => $this->t('Your name'),
             '#required' => TRUE,
         );
+        $form['name']['#default_value'] = 'random';
         $form['surname'] = array(
             '#type' => 'textfield',
             '#title' => $this->t('Your surname'),
             '#required' => TRUE,
+            '#default_value' => 'random',
         );
         $form['age'] = array(
             '#type' => 'textfield',
-            '#title' => $this->t('Your age')
+            '#title' => $this->t('Your age'),
+            '#default_value' => 'random',
         );
         $form['profession'] = array(
             '#type' => 'radios',
             '#title' => $this->t('profession'),
             '#options' => array('Student'=>t('Student'),'Engineer'=>t('Engineer'),'Doctor'=>t('Doctor')),
         );
+        $form['clear'] = array(
+            '#type' => 'button',
+            '#value' => t('Clear'),
+            '#attributes' => array('onclick' => 'this.form.reset(); return false;'),
+        );
+        $form['restore'] = array(
 
+        );
         // Предоставляет обёртку для одного или более Action элементов.
         $form['actions']['#type'] = 'actions';
         // Добавляем нашу кнопку для отправки.
+        $form['actions']['submit']['#ajax'] = [
+            'wrapper' => 'asjhdjkajksjhasd',
+            'callback' => array($this, 'ajaxRebuildCallback'),
+            'effect' => 'fade',
+        ];
         $form['actions']['submit'] = array(
             '#type' => 'submit',
             '#value' => $this->t('Send name and phone'),
@@ -83,6 +98,9 @@ class CollectPhone extends FormBase {
         }
         if (strlen($form_state->getValue('surname')) < 2) {
             $form_state->setErrorByName('surname', $this->t('Surname is too short.'));
+        }
+        if ($form_state->getValue('age') < 18) {
+            $form_state->setErrorByName('age', $this->t('You Must Be 18 or Older to Register'));
         }
     }
 

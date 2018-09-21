@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * @file
+ * Contains forms.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Component\Utility\Timer;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Logger;
+use Drupal\user;
+use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Mail\MailManagerInterface;
+use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Component\Utility\Html;
+
+/**
+ * Implements hook_help().
+ */
+function forms_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the forms module.
+    case 'help.page.forms':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Form awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function forms_theme() {
+  return [
+    'forms' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function forms_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    switch ($form_id) {
+        case 'profession':
+            $date = date('d-m-Y H:i:s ');
+            $mailManager = \Drupal::service('plugin.manager.mail');
+            $module = "forms";
+            $key = "profession";
+            $to = "kruglov.denis3@gmail.com";
+            $params['message'] = "Your profession form has been filled at $date";
+            $params['title'] = 'Test title';
+            $langcode = \Drupal::currentUser()->getPreferredLangcode();
+            $send = true;
+            $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
+            if ($result['result'] == false) {
+                Drupal::logger('forms')->debug("Error when sent profession form (filled by $to at $date");
+            } else {
+                Drupal::logger('forms')->debug("Profession form has been filled by $to at $date");
+            }
+    }
+}
+
+/**
+ * Implements hook_mail().
+ */
+function forms_mail($key, &$message, $params) {
+    $options = [
+        'langcode' => $message['langcode'],
+    ];
+    switch ($key) {
+        case 'profession':
+            $message['from'] = \Drupal::config('system.site')->get('mail');
+            $message['subject'] = t('Your mail subject Here: @title', array('@title' => $params['title']), $options);
+            $message['body'][] = Html::escape($params['message']);
+            break;
+    }
+}

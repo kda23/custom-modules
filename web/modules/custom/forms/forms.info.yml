@@ -1,0 +1,5 @@
+name: 'forms'
+type: module
+description: 'Form awesome Module'
+core: 8.x
+package: 'Custom'
