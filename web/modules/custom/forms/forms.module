@@ -46,12 +46,13 @@ function forms_theme() {
  * Implements hook_form_alter().
  */
 function forms_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+//    dump($form_id);
     switch ($form_id) {
-        case 'profession':
+        case 'professions':
             $date = date('d-m-Y H:i:s ');
             $mailManager = \Drupal::service('plugin.manager.mail');
             $module = "forms";
-            $key = "profession";
+            $key = "professions";
             $to = "kruglov.denis3@gmail.com";
             $params['message'] = "Your profession form has been filled at $date";
             $params['title'] = 'Test title';
@@ -74,10 +75,27 @@ function forms_mail($key, &$message, $params) {
         'langcode' => $message['langcode'],
     ];
     switch ($key) {
-        case 'profession':
+        case 'professions':
             $message['from'] = \Drupal::config('system.site')->get('mail');
             $message['subject'] = t('Your mail subject Here: @title', array('@title' => $params['title']), $options);
             $message['body'][] = Html::escape($params['message']);
             break;
+    }
+}
+
+//function forms_preprocess_form(&$form, $form_id){
+//    $some = \Drupal::formBuilder()->getFormId();
+//    dump($some['#form_id']);
+//    switch ($variables['#id']) {
+//        case 'profession':
+//                $vars['element']['drupalSettings']['library'][] = 'forms/custom';
+//    }
+//
+//}
+
+function forms_preprocess_page(&$vars){
+    $current_path = \Drupal::service('path.current')->getPath();
+    if ($current_path == '/collect-phone') {
+        $vars['page']['content']['#attached']['library'][] = 'forms/custom';
     }
 }

@@ -1,45 +1,37 @@
 <?php
 /**
  * @file
- * Contains \Drupal\helloworld\Form\CollectPhone.
+ * Contains \Drupal\forms\Form\CollectPhone.
  *
- * В комментарии выше указываем, что содержится в данном файле.
  */
 
-// Объявляем пространство имён формы. Drupal\НАЗВАНИЕ_МОДУЛЯ\Form
 namespace Drupal\forms\Form;
 
-// Указываем что нам потребуется FormBase, от которого мы будем наследоваться
-// а также FormStateInterface который позволит работать с данными.
+
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Ajax\HtmlCommand;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Объявляем нашу форму, наследуясь от FormBase.
- * Название класса строго должно соответствовать названию файла.
+ *
  */
 class CollectPhone extends FormBase {
 
     /**
-     * То что ниже - это аннотация. Аннотации пишутся в комментариях и в них
-     * объявляются различные данные. В данном случае указано, что документацию
-     * к данному методу надо взять из комментария к самому классу.
-     *
-     * А в самом методе мы возвращаем название нашей формы в виде строки.
-     * Эта строка используется для альтера формы (об этом ниже в тексте).
      *
      * {@inheritdoc}.
      */
     public function getFormId() {
-        return 'profession';
+        return 'professions';
     }
 
     /**
-     * Создание нашей формы.
      *
      * {@inheritdoc}.
      */
     public function buildForm(array $form, FormStateInterface $form_state) {
+        dump($form_state['build_info']['form_id']);
         $form['name'] = array(
             '#type' => 'textfield',
             '#title' => $this->t('Your name'),
@@ -56,23 +48,53 @@ class CollectPhone extends FormBase {
             '#type' => 'textfield',
             '#title' => $this->t('Your age'),
             '#default_value' => 'random',
+            '#ajax' => [
+                'callback' => array($this, 'validateForm'),
+                'wrapper' => 'age-validation',
+            ]
         );
         $form['profession'] = array(
             '#type' => 'radios',
             '#title' => $this->t('profession'),
             '#options' => array('Student'=>t('Student'),'Engineer'=>t('Engineer'),'Doctor'=>t('Doctor')),
         );
+        $form['experience'] = [
+            '#type' => 'textfield',
+            '#title' => t('How many years of experience'),
+            '#states' => [
+                    'visible' => [
+                        ':input[name="profession"]' => [
+                            ['value' => 'Engineer'],
+                            ['value' => 'Doctor'],
+                        ],
+                    ],
+                    'required' => [
+                        ':input[name="profession"]' => [
+                            ['value' => 'Engineer'],
+                            ['value' => 'Doctor'],
+                        ]
+                    ]
+                ]
+            ];
         $form['clear'] = array(
             '#type' => 'button',
             '#value' => t('Clear'),
             '#attributes' => array('onclick' => 'this.form.reset(); return false;'),
+//            '#prefix' => '<input type="reset" value="clear">',
         );
-        $form['restore'] = array(
+//        $form['clear'] = array(
+//            '#type' => 'button',
+//            '#value' => t('Clear'),
+//            '#attributes' => array('onclick' => 'this.form.reset(); return false;'),
+//        );
+        $form['rebuild'] = array(
+            '#type' => 'button',
+            '#value' => t('Rebuild'),
+            '#attributes' => array('id' => 'clear-button'),
+        );
 
-        );
-        // Предоставляет обёртку для одного или более Action элементов.
         $form['actions']['#type'] = 'actions';
-        // Добавляем нашу кнопку для отправки.
+
         $form['actions']['submit']['#ajax'] = [
             'wrapper' => 'asjhdjkajksjhasd',
             'callback' => array($this, 'ajaxRebuildCallback'),
@@ -92,16 +114,23 @@ class CollectPhone extends FormBase {
      * {@inheritdoc}
      */
     public function validateForm(array &$form, FormStateInterface $form_state) {
-        // Если длина имени меньше 5, выводим ошибку.
+//        $ajax_response = new AjaxResponse();
+
         if (strlen($form_state->getValue('name')) < 2) {
             $form_state->setErrorByName('name', $this->t('Name is too short.'));
         }
         if (strlen($form_state->getValue('surname')) < 2) {
             $form_state->setErrorByName('surname', $this->t('Surname is too short.'));
         }
+        if (!is_numeric($form_state->getValue('age'))) {
+//            $form_state->setErrorByName('age', $this->t('The value must be a number'));
+            $text = 'The value must be a number';
+//            $ajax_response->addCommand(new HtmlCommand('.age-validation', $text));
+        }
         if ($form_state->getValue('age') < 18) {
             $form_state->setErrorByName('age', $this->t('You Must Be 18 or Older to Register'));
         }
+
     }
 
     /**
@@ -110,12 +139,30 @@ class CollectPhone extends FormBase {
      * {@inheritdoc}
      */
     public function submitForm(array &$form, FormStateInterface $form_state) {
-        // Мы ничего не хотим делать с данными, просто выведем их в системном
-        // сообщении.
-        drupal_set_message($this->t('Thank you @name, your phone number is @number', array(
-            '@name' => $form_state->getValue('name'),
-            '@number' => $form_state->getValue('phone_number')
-        )));
+
+        switch ($form_state) {
+            case 'professions':
+                $date = date('d-m-Y H:i:s ');
+                $mailManager = \Drupal::service('plugin.manager.mail');
+                $module = "forms";
+                $key = "professions";
+                $to = "kruglov.denis3@gmail.com";
+                $params['message'] = "Your profession form has been filled at $date";
+                $params['title'] = 'Test title';
+                $langcode = \Drupal::currentUser()->getPreferredLangcode();
+                $send = true;
+                $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
+                if ($result['result'] == false) {
+                    Drupal::logger('forms')->debug("Error when sent profession form (filled by $to at $date");
+                } else {
+                    Drupal::logger('forms')->debug("Profession form has been filled by $to at $date");
+                }
+        }
+//        // Output data like a system massage
+//        drupal_set_message($this->t('Thank you @name, your phone number is @number', array(
+//            '@name' => $form_state->getValue('name'),
+//            '@number' => $form_state->getValue('phone_number')
+//        )));
     }
 
 }

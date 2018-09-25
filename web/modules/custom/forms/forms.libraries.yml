@@ -1,0 +1,13 @@
+custom:
+  css:
+    theme:
+      css/front.css: {}
+      slick/slick.css: {}
+      slick/slick-theme.css: {}
+      css/custom.css: {}
+  js:
+    js/custom.js: {}
+    slick/slick.min.js: {}
+  dependencies:
+  - core/jquery
+  - core/jquery.once

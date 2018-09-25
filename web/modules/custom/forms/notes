@@ -1,0 +1,229 @@
+1. Аннотации в файле SimpleController.php
+В аргументы препроцесса пейджы дописать варс и добавить в этот препроцесс строку из телеги
+
+
+
+
+1. Declared my own module (.info.yml) with additional files
+2. Created a permissions in the module (name "Watch generation time"), execution  time of page generation (in seconds)
+3. Created layout in the form of "brickwork" with regions top, left, right, bottom
+4. Declare and connect the library slick.js with help of "$types['table']['#attached']['library'][] = 'your_module/library_name';"
+
+
+
+Files:
+.info.yml - https://pix.toile-libre.org/upload/original/1535631003.png
+.module - http://pix.toile-libre.org/upload/original/1535631215.png
+.libraries.yml - http://pix.toile-libre.org/upload/original/1535631306.png
+.layouts.yml - http://pix.toile-libre.org/upload/original/1535631350.png
+.html.twig (templates) - https://pix.toile-libre.org/upload/original/1535631893.png
+
+Result of the module work
+http://pix.toile-libre.org/upload/original/1535631552.png
+http://pix.toile-libre.org/upload/original/1535631641.png
+
+
+
+
+bootstrap:
+  css:
+    theme:
+      css/front.css: {}
+      slick/slick.css: {}
+      slick/slick-theme.css: {}
+      css/custom.css: {}
+  js:
+      js/custom.js: {}
+      slick/slick.min.js: {}
+  dependencies:
+  - core/jquery
+  - core/jquery.once
+
+
+1) Пиши норм коменты
+
+
+
+
+https://eminenceneurosurgery.onlinemedicalstaging.com.au/procedures/cervical-spinal-fusion - anchor "Myelopathy and spinal cord compression"
+https://eminenceneurosurgery.onlinemedicalstaging.com.au/procedures/avm-and-davf-microsurgery - 404 link, anchor "AVM, DAVF and CCF - Embolisation"
+https://eminenceneurosurgery.onlinemedicalstaging.com.au/procedures/avm-davf-and-ccf-embolisation - anchor "Arteriovenous Fistula and Carotid-Cavernous Fistula"
+https://eminenceneurosurgery.onlinemedicalstaging.com.au/procedures/aneurysm-coiling-and-stent - 404 links, anchor "Brain Aneurysms", "aneurysm clipping", "Aneurysm clipping"
+
+
+
+
+
+
+denis.k@team.anyforsoft.com
+Denis23
+uzpV356HDP
+
+
+
+
+juampy - denis
+
+
+
+
+ /**
+  * Implements hook_theme() for register form.
+  */
+function simple_theme($existing, $type, $theme, $path) {
+    return [
+        'simple_user_register_form' => [
+            'render element' => 'form',
+            'path' => drupal_get_path('module', 'simple') . '/templates',
+        ],
+    ];
+}
+
+
+1. Обновить филд ноды -
+2. Все манипуляции с ентититайпменеджер
+
+
+
+Как работает сеть, протоколы - аудиокнига
+
+
+
+Hook_create срабатывает до создания обьекта
+Hook_insert - срабатывает перед записью обьекта в базу
+
+
+function hooks_preprocess_html(&$variables) {
+    // Entity reference field name.
+    $field_name = 'field_term';
+    // Get the node object from the visited page.
+    // If the page is not a node detail page, it'll return NULL.
+    $node = \Drupal::request()->attributes->get('node');
+    // Make sure the node has the field.
+    if ($node && $node->hasField($field_name)) {
+        $referenced_entities = $node->get($field_name)->referencedEntities();
+        foreach ($referenced_entities as $term) {
+            $variables['attributes']['class'][] = \Drupal\Component\Utility\Html::cleanCssIdentifier($term->getName());
+            $name[] = $term->getName();
+            $vocabulary_id = $term->bundle();
+        }
+        $vocabulary = \Drupal\taxonomy\Entity\Vocabulary::load('termin');
+        $vocabularyDescription = $vocabulary->getDescription();
+        echo $vocabularyDescription;
+    }
+    if ($variables['attributes']) {
+        sort($variables['attributes']['class']);
+        foreach ($variables['attributes']['class'] as $variable) {
+            echo $variable;
+        }
+    }
+
+
+
+function hooks_preprocess_html(&$variables)
+{
+    // Entity reference field name.
+    $field_name = 'field_term';
+    // Get the node object from the visited page.
+    // If the page is not a node, it'll return NULL.
+    $node = \Drupal::request()->attributes->get('node');
+    if ($node) {
+        $article = $node->getType();
+    // Make sure the node has term field.
+        if ($article == 'article') {
+            $referenced_entities = $node->get($field_name)->referencedEntities();
+            foreach ($referenced_entities as $term) {
+                $variables['term'][] = $term->getName();
+            }
+            $countTerm = count($variables['term']);
+            if ($variables['term']) {
+                sort($variables['term']);
+                for ($x = 0; $x < $countTerm; $x++) {
+                    echo $variables['term'][$x] . "<br>";
+                }
+            }
+        }
+    }
+}
+
+//function hooks_preprocess_page(&$variables)
+//{
+//    // Entity reference field name.
+//    $field_name = 'field_term';
+//    // Get the node object from the visited page.
+//    // If the page is not a node, it'll return NULL.
+//    $node = \Drupal::request()->attributes->get('node');
+//    if ($node) {
+//        $article = $node->getType();
+//    // Make sure the node has term field.
+//        if ($article == 'article') {
+//            $referenced_entities = $node->get($field_name)->referencedEntities();
+//            foreach ($referenced_entities as $term) {
+//                $variables['term'][] = $term->getName();
+//                $variables['vocabularies'][] = $term->bundle();
+//            }
+//            $vocabulary = \Drupal\taxonomy\Entity\Vocabulary::load('termin');
+//            $vocabularyDescription = $vocabulary->getDescription();
+//            echo $vocabularyDescription;
+//            $countTerm = count($variables['term']);
+//            if ($variables['term']) {
+//                sort($variables['term']);
+//                for ($x = 0; $x < $countTerm; $x++) {
+//                    echo $variables['term'][$x] . " - " . $variables['vocabularies'][$x] . "<br>";
+//                }
+//            }
+//        }
+//    }
+//}
+
+
+
+
+1. Использовать вывод массива не через респонс, респонс-джей-сон
+2. text и context
+
+
+
+Вопросы
+1. Возможно ли подключить тимплейт к модулю без hook_theme() // Можно через #theme
+2. Как добавить в пермишены в роутинге несколько ролей // по идее при помощи 
+
+
+
+
+
+node/%node/user-comments
+
+
+Вот вам чуть заданий на сегодня до вечера :slightly_smiling_face:
+1) вывести json ваших нод (поля: nid, type, title)
+2) Как запретить анонимным пользователям просматривать ваш контроллер?
+3) Зачем нужны сервисы? Приведите примеры, когда использование dependency injection будет НЕрационально с точки зрения производительности.
+4) Создайте сервис и выведите в нем текущее время и дату. Закешируйте данные на 1 час
+5) Создайте отдельный контроллер. Разрешите только запросы GET. Выведите список нод (nid + title) созданных сегодня
+6) Создайте кастомный заголовок для вашей страницы “My page. Generated at %time” где %time - текущее время и закешируйте на 1 час. Контент тот же что и в п.3
+7) Создайте роут node/%node/user-comments и отобразите список утвержденных комментариев для текущей ноды. Переиспользуйте существующее представление или создайте новое.
+8) Создайте собственный сервис. Ваш сервис должен быть на высоте. Ваш сервис должен иметь метод isDayOff($date = ‘today’) Данный метод возвращает true если сегодня выходной и false, если рабочий день. Выходные дни для английской версии сайта и для русской могут отличаться. Данные о выходных/рабочих днях могут хранится как константы самого сервиса
+9) Модифицируйте сервис из п.7 таким образом, чтобы сервис мог обрабатывать ошибку, если формат даты не верен. При возникновении ошибки сделайте запись в системный журнал. А так же вынесите константы в yml файл.
+10) Модифицируйте контролеры из п3 и п5. Создайте сервис MyPageTimeInvalidator с методом resetTime(). При вызове этого метода должен сброситься кеш этих контроллеров
+11) Напишите сервис, который называется “FindSimilarContent”. Метод find($text) Должен разбить $text на слова и загрузить ноду по имени.
+12) Модифицируйте сервис из п10 таким образом, чтобы метод find принимал параметры find($text, $entity_type = ‘node’)
+13) * Добавьте в сервис из п.10 еще один метод smartSearch($text) и для поиска используйте модуль search. Подсказка - см. Drupal\search\Controller::view
+14) Средствами EventSubscriber Установите для терминов таксономии CORS, которые позволят обращаться к странице асинхронно
+15) Для своего контроллера из п. 6 создайте хлебные крошки вида Главная > Заголовок ноды > комментарии. Хлебные крошки должны быть двуязычными (edited)
+
+
+
+1. Будет ли повышаться зп по ходу испытательного срока?
+2. Если удастся пройти собеседование на высоком урове, то возможно ли более весомое повышение зп?
+
+
+
+
+а) ssh-keygen -t rsa -C "ktuglov.denis3@gmail.com"
+б) xclip -sel clip < ~/.ssh/id_rsa.pub
+в) sudo vim id_rsa.pub
+
+11.26
+ajax example
+form example
