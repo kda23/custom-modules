@@ -12,6 +12,14 @@ use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\HtmlCommand;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Logger;
+use Drupal\user;
+use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Mail\MailManagerInterface;
+use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Component\Utility\Html;
+
 
 /**
  *
@@ -31,7 +39,7 @@ class CollectPhone extends FormBase {
      * {@inheritdoc}.
      */
     public function buildForm(array $form, FormStateInterface $form_state) {
-        dump($form_state['build_info']['form_id']);
+
         $form['name'] = array(
             '#type' => 'textfield',
             '#title' => $this->t('Your name'),
@@ -48,10 +56,12 @@ class CollectPhone extends FormBase {
             '#type' => 'textfield',
             '#title' => $this->t('Your age'),
             '#default_value' => 'random',
-            '#ajax' => [
-                'callback' => array($this, 'validateForm'),
-                'wrapper' => 'age-validation',
-            ]
+//            '#attributes' => ['id' => 'age-validation'],
+//            '#ajax' => [
+//              'callback' => '::validateAjax',
+//              'event' => 'change',
+//            ],
+              '#prefix' => '<div id="age-validation"></div>',
         );
         $form['profession'] = array(
             '#type' => 'radios',
@@ -82,11 +92,6 @@ class CollectPhone extends FormBase {
             '#attributes' => array('onclick' => 'this.form.reset(); return false;'),
 //            '#prefix' => '<input type="reset" value="clear">',
         );
-//        $form['clear'] = array(
-//            '#type' => 'button',
-//            '#value' => t('Clear'),
-//            '#attributes' => array('onclick' => 'this.form.reset(); return false;'),
-//        );
         $form['rebuild'] = array(
             '#type' => 'button',
             '#value' => t('Rebuild'),
@@ -97,13 +102,17 @@ class CollectPhone extends FormBase {
 
         $form['actions']['submit']['#ajax'] = [
             'wrapper' => 'asjhdjkajksjhasd',
-            'callback' => array($this, 'ajaxRebuildCallback'),
+//            'callback' => array($this, 'ajaxRebuildCallback'),
             'effect' => 'fade',
         ];
         $form['actions']['submit'] = array(
             '#type' => 'submit',
             '#value' => $this->t('Send name and phone'),
             '#button_type' => 'primary',
+            '#ajax' => [
+                'callback' => '::validateAjax',
+                'wrapper' => 'age-validation',
+            ]
         );
         return $form;
     }
@@ -123,13 +132,21 @@ class CollectPhone extends FormBase {
             $form_state->setErrorByName('surname', $this->t('Surname is too short.'));
         }
         if (!is_numeric($form_state->getValue('age'))) {
-//            $form_state->setErrorByName('age', $this->t('The value must be a number'));
-            $text = 'The value must be a number';
+            dump($form_state);
+            $form_state->setErrorByName('age', $this->t('The value must be a number'));
+//            $text = 'The value must be a number';
 //            $ajax_response->addCommand(new HtmlCommand('.age-validation', $text));
         }
         if ($form_state->getValue('age') < 18) {
             $form_state->setErrorByName('age', $this->t('You Must Be 18 or Older to Register'));
         }
+    }
+
+    public function validateAjax(array &$form, FormStateInterface $form_state) {
+//        $response = new AjaxResponse();
+//        $response->addCommand(new HtmlCommand('.age-validation', 'Some'));
+//        return $response;
+        return $form['age'];
 
     }
 
@@ -139,24 +156,26 @@ class CollectPhone extends FormBase {
      * {@inheritdoc}
      */
     public function submitForm(array &$form, FormStateInterface $form_state) {
-
-        switch ($form_state) {
+        $form_values = $form_state->getValues();
+        switch ($form['#id']) {
             case 'professions':
                 $date = date('d-m-Y H:i:s ');
                 $mailManager = \Drupal::service('plugin.manager.mail');
                 $module = "forms";
                 $key = "professions";
                 $to = "kruglov.denis3@gmail.com";
-                $params['message'] = "Your profession form has been filled at $date";
+                $params['message'] = "Your profession form has been filled. Name: " . $form_values['name'] . ", Surname: " . $form_values['surname']
+                  . ", Age: " . $form_values['age'] . ", Profession: " . $form_values['profession'] . ", experience: " . $form_values['experience'];
                 $params['title'] = 'Test title';
                 $langcode = \Drupal::currentUser()->getPreferredLangcode();
                 $send = true;
                 $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
                 if ($result['result'] == false) {
-                    Drupal::logger('forms')->debug("Error when sent profession form (filled by $to at $date");
+                    drupal_set_message(t("Error when sent profession form"));
                 } else {
-                    Drupal::logger('forms')->debug("Profession form has been filled by $to at $date");
+                    drupal_set_message(t("Profession form has been filled"));
                 }
+
         }
 //        // Output data like a system massage
 //        drupal_set_message($this->t('Thank you @name, your phone number is @number', array(

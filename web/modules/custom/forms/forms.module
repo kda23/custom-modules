@@ -45,27 +45,27 @@ function forms_theme() {
 /**
  * Implements hook_form_alter().
  */
-function forms_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-//    dump($form_id);
-    switch ($form_id) {
-        case 'professions':
-            $date = date('d-m-Y H:i:s ');
-            $mailManager = \Drupal::service('plugin.manager.mail');
-            $module = "forms";
-            $key = "professions";
-            $to = "kruglov.denis3@gmail.com";
-            $params['message'] = "Your profession form has been filled at $date";
-            $params['title'] = 'Test title';
-            $langcode = \Drupal::currentUser()->getPreferredLangcode();
-            $send = true;
-            $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
-            if ($result['result'] == false) {
-                Drupal::logger('forms')->debug("Error when sent profession form (filled by $to at $date");
-            } else {
-                Drupal::logger('forms')->debug("Profession form has been filled by $to at $date");
-            }
-    }
-}
+//function forms_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+////    dump($form_id);
+//    switch ($form_id) {
+//        case 'professions':
+//            $date = date('d-m-Y H:i:s ');
+//            $mailManager = \Drupal::service('plugin.manager.mail');
+//            $module = "forms";
+//            $key = "professions";
+//            $to = "kruglov.denis3@gmail.com";
+//            $params['message'] = "Your profession form has been filled at $date";
+//            $params['title'] = 'Test title';
+//            $langcode = \Drupal::currentUser()->getPreferredLangcode();
+//            $send = true;
+//            $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
+//            if ($result['result'] == false) {
+//                Drupal::logger('forms')->debug("Error when sent profession form (filled by $to at $date");
+//            } else {
+//                Drupal::logger('forms')->debug("Profession form has been filled by $to at $date");
+//            }
+//    }
+//}
 
 /**
  * Implements hook_mail().
